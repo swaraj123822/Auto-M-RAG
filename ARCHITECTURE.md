@@ -44,9 +44,9 @@ The ingestion pipeline parses complex automotive manuals, separates text from vi
 ```mermaid
 graph TD
     %% Styling
-    classDef storage fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef process fill:#bbf,stroke:#333,stroke-width:2px;
-    classDef model fill:#fbb,stroke:#333,stroke-width:2px;
+    classDef storage fill:#fff3cd,stroke:#d39e00,stroke-width:2px,color:#1a1a1a;
+    classDef process fill:#cfe2ff,stroke:#0d6efd,stroke-width:2px,color:#1a1a1a;
+    classDef model fill:#e2d9f3,stroke:#6f42c1,stroke-width:2px,color:#1a1a1a;
 
     %% Nodes
     A["Raw PDF Manuals"] -->|Extract| B("Layout-Aware Parser")
@@ -76,10 +76,10 @@ When the Kotlin mobile app sends a request, the retrieval pipeline intercepts th
 ```mermaid
 graph TD
     %% Styling
-    classDef app fill:#d4edda,stroke:#28a745,stroke-width:2px;
-    classDef storage fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef process fill:#bbf,stroke:#333,stroke-width:2px;
-    classDef model fill:#fbb,stroke:#333,stroke-width:2px;
+    classDef app fill:#d4edda,stroke:#28a745,stroke-width:2px,color:#1a1a1a;
+    classDef storage fill:#fff3cd,stroke:#d39e00,stroke-width:2px,color:#1a1a1a;
+    classDef process fill:#cfe2ff,stroke:#0d6efd,stroke-width:2px,color:#1a1a1a;
+    classDef model fill:#e2d9f3,stroke:#6f42c1,stroke-width:2px,color:#1a1a1a;
 
     %% Nodes
     A["User Query via Kotlin App"]:::app --> B["Query Processor & Router"]:::process
@@ -113,7 +113,7 @@ This diagram shows the overall system components, separating the client layer, b
 ```mermaid
 graph LR
     %% Styling
-    classDef layer fill:#f4f4f9,stroke:#333,stroke-width:2px;
+    classDef layer fill:#f4f4f9,stroke:#333,stroke-width:2px,color:#1a1a1a;
 
     subgraph "Client Layer"
         KA["Kotlin Mobile App<br/>UI & State Management"]

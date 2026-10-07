@@ -95,9 +95,9 @@ Two things worth reading off this table:
 
 ```mermaid
 graph LR
-    classDef app fill:#d4edda,stroke:#28a745,stroke-width:2px;
-    classDef store fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef model fill:#fbb,stroke:#333,stroke-width:2px;
+    classDef app fill:#d4edda,stroke:#28a745,stroke-width:2px,color:#1a1a1a;
+    classDef store fill:#fff3cd,stroke:#d39e00,stroke-width:2px,color:#1a1a1a;
+    classDef model fill:#e2d9f3,stroke:#6f42c1,stroke-width:2px,color:#1a1a1a;
 
     APP["Kotlin App"]:::app -->|"POST /v1/query"| API["FastAPI Backend"]
     API --> QR["Query Router<br/>rewrite + vehicle filter"]
